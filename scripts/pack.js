@@ -2,7 +2,7 @@ const childProcess = require('child_process')
 
 const { log } = require('./utils.js')
 
-const ARCHIVE = 'epic_screenshot.zip'
+const ARCHIVE = 'mobx_prettier.zip'
 const DIRS = {
   DIST: './dist',
 }

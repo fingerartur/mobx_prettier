@@ -1,7 +1,7 @@
 const childProcess = require('child_process')
 const fs = require('fs')
 
-const { assertMinNodeVersion, clearDirectory, copyFiles, log, copyFile } = require('./utils.js')
+const { assertMinNodeVersion, clearDirectory, copyFiles, log } = require('./utils.js')
 
 assertMinNodeVersion(16)
 
