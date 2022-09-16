@@ -1,6 +1,8 @@
 # Mobx Prettier
 Mobx Prettier is a Chrome extension that prettifies / formats Mobx objects in Dev Tools console and debugger for easy inspection.
 
+![](./assets_store/screenshot.png)
+
 
 ## Setup
 ```bash
