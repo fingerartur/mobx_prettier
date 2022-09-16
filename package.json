@@ -1,6 +1,6 @@
 {
   "name": "mobx_prettier",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Prettify Mobx objects in chrome console and debugger.",
   "repository": "https://github.com/fingerartur/mobx_prettier",
   "author": "Artur Finger <fingerartur@gmail.com>",

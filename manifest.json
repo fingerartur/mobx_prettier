@@ -1,7 +1,7 @@
 {
   "name": "Mobx Prettier",
   "manifest_version": 3,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Prettify Mobx objects in Chrome console and debugger.",
   "icons": {
     "16": "icon16.png",
