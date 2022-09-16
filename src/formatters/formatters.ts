@@ -1,7 +1,8 @@
 import { getMobxApi } from '../mobx.api'
 
-import { inline } from './inline'
+import { Inliner } from './inline'
 
+import type { Inlineable } from './inline'
 import type { ChromeFormatter, FormattedOutput } from './types'
 
 const styles = {
@@ -13,9 +14,11 @@ const styles = {
  * Formatter for Mobx variables
  */
 class MobxFormatter implements ChromeFormatter {
+  private inliner = new Inliner()
+
   header(argument: unknown): FormattedOutput | null {
     if (getMobxApi().isObservable(argument)) {
-      const jsValue = getMobxApi().toJS(argument)
+      const jsValue = getMobxApi().toJS(argument) as Inlineable
 
       return [
         'span', {},
@@ -24,7 +27,7 @@ class MobxFormatter implements ChromeFormatter {
         // Tag (just for style)
         ['span', styles.mobxTag, 'mobx'],
         // Inline preview of the data
-        ['span', styles.inlinePreview, inline(jsValue)],
+        ['span', styles.inlinePreview, this.inliner.inline(jsValue)],
       ]
     }
 
