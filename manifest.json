@@ -1,8 +1,8 @@
 {
-  "name": "Mobx prettifier",
+  "name": "Mobx Prettier",
   "manifest_version": 3,
   "version": "0.0.0",
-  "description": "Prettify mobx objects in chrome console and debugger.",
+  "description": "Prettify Mobx objects in Chrome console and debugger.",
   "icons": {
     "16": "icon16.png",
     "32": "icon32.png",
@@ -10,7 +10,7 @@
     "128": "icon128.png"
   },
   "action": {
-    "default_title": "Mobx prettifier",
+    "default_title": "Mobx Prettier",
     "default_icon": {
       "16": "icon16.png",
       "32": "icon32.png",
