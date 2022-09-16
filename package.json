@@ -1,0 +1,26 @@
+{
+  "name": "mobx_prettier",
+  "version": "0.0.0",
+  "description": "Prettify Mobx objects in chrome console and debugger.",
+  "repository": "https://github.com/fingerartur/mobx-debug.git",
+  "author": "Artur Finger <fingerartur@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "main": "manifest.json",
+  "scripts": {
+    "example": "npx http-server ./example",
+    "build": "node ./scripts/build.js",
+    "pack": "node ./scripts/build.js && node ./scripts/pack.js"
+  },
+  "devDependencies": {
+    "@finga/eslint-config": "^1.2.0",
+    "@types/chrome": "^0.0.184",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "chalk": "^4.1.0",
+    "eslint": "^8.23.0",
+    "eslint-plugin-import": "github:fingerartur/eslint-plugin-import",
+    "ts-loader": "^9.3.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-merge": "^5.8.0"
+  }
+}

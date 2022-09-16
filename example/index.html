@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mobx Prettier example</title>
+  <script src="https://unpkg.com/mobx@6.5.0/dist/mobx.umd.production.min.js"></script>
+  <script>
+
+    class Car {
+      mileage = 56
+      brand = "Alfa Romeo"
+
+      constructor() {
+        mobx.makeAutoObservable(this)
+      }
+
+      honk() {
+        return 'honk honk'
+      }
+
+      go = () => {
+        return 'car go'
+      }
+    }
+
+    const classInstance = new Car()
+
+    const complexObject = mobx.makeAutoObservable({
+      color: "blue",
+      crack: function () { },
+      layers: [{
+        order: 1,
+        position: 'top',
+        sublayers: [
+          {
+            order: 1,
+            position: 'right'
+          }
+        ]
+      }, {
+        order: 2,
+        position: 'center'
+      }, {
+        order: 3,
+        position: 'bottom'
+      }],
+    })
+
+    const array = mobx.observable([1, 2, 3, 4])
+    const arrayLong = mobx.observable([1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4])
+
+    const set = new mobx.ObservableSet([1, 2, 3, 4])
+
+    const map = new mobx.ObservableMap()
+    map.set('a', 'aloha')
+    map.set('b', 'beer')
+
+    window.logToConsole = function logToConsole() {
+      console.info('object', complexObject)
+      console.info('class instance', classInstance)
+      console.info('array', array)
+      console.info('array long', arrayLong)
+      console.info('set', set)
+      console.info('map', map)
+
+      // console.info('object', 'mobx prettier', complexObject, 'toJS()', mobx.toJS(complexObject))
+      // console.info('class instance', 'mobx prettier', classInstance, 'toJS()', mobx.toJS(classInstance))
+      // console.info('array', 'mobx prettier', array, 'toJS()', mobx.toJS(array))
+      // console.info('array long', 'mobx prettier', arrayLong, 'toJS()', mobx.toJS(arrayLong))
+      // console.info('set', 'mobx prettier', set, 'toJS()', mobx.toJS(set))
+      // console.info('map', 'mobx prettier', map, 'toJS()', mobx.toJS(map))
+    }
+
+    setTimeout(() => {
+      window.logToConsole()
+    }, 1000)
+  </script>
+</head>
+
+<body>
+  <p>
+    Open console a wait 1 sec :)
+  </p>
+
+</body>
+
+</html>
