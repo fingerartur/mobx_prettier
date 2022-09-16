@@ -10,7 +10,7 @@ const styles = {
 }
 
 /**
- * Formatter for Mobx sets
+ * Formatter for Mobx variables
  */
 class MobxFormatter implements ChromeFormatter {
   header(argument: unknown): FormattedOutput | null {
@@ -19,8 +19,11 @@ class MobxFormatter implements ChromeFormatter {
 
       return [
         'span', {},
+        // Let chrome format it with default formatting
         ['object', { object: jsValue }],
+        // Tag (just for style)
         ['span', styles.mobxTag, 'mobx'],
+        // Inline preview of the data
         ['span', styles.inlinePreview, inline(jsValue)],
       ]
     }

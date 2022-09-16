@@ -19,6 +19,11 @@ const installFormatters = () => {
   })
 }
 
+/**
+ * Install Dev Tool Formatters that convert Mobx data to plain easily readable objects.
+ *
+ * If Mobx is not present in `window.mobx` nothing happens.
+ */
 const installChromeFormattersForMobx = () => {
   const errors = validateMobxApi()
 
