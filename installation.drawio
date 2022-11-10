@@ -1,0 +1,113 @@
+<mxfile host="65bd71144e">
+    <diagram id="E36QOuqOsvz1ev1PBJ1B" name="Page-1">
+        <mxGraphModel dx="1644" dy="1884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="53" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="80" y="585" width="450" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="53" vertex="1">
+                    <mxGeometry x="290" y="220" width="160" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="53" vertex="1">
+                    <mxGeometry x="60" y="220" width="160" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-90;" parent="53" vertex="1">
+                    <mxGeometry x="220" y="190" width="70" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="&lt;b&gt;DOM&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="53" vertex="1">
+                    <mxGeometry x="225" y="240" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="shape=card;whiteSpace=wrap;html=1;" parent="53" vertex="1">
+                    <mxGeometry x="350" y="100" width="60" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="shape=card;whiteSpace=wrap;html=1;" parent="53" vertex="1">
+                    <mxGeometry x="360" y="110" width="60" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="Chrome extension files" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="53" vertex="1">
+                    <mxGeometry x="334" y="60" width="96" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Chrome extension execution environment" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="53" vertex="1">
+                    <mxGeometry x="300" y="230" width="130" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="Page/Website execution environemnt" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="53" vertex="1">
+                    <mxGeometry x="70" y="230" width="140" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="endArrow=classic;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="53" target="42" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="344" y="320" as="sourcePoint"/>
+                        <mxPoint x="274" y="260" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="Add script tag that&lt;br&gt;points to extension files" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#4D9900;" parent="38" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3979" y="-2" relative="1" as="geometry">
+                        <mxPoint x="51" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="" style="endArrow=classic;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="53" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="360" y="150" as="sourcePoint"/>
+                        <mxPoint x="110" y="280" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="240" y="240"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="Load script from&lt;br&gt;extension files" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#4D9900;" parent="40" vertex="1" connectable="0">
+                    <mxGeometry x="0.7596" y="-3" relative="1" as="geometry">
+                        <mxPoint x="18" y="-17" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="script" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#4D9900;" parent="53" vertex="1">
+                    <mxGeometry x="232" y="224" width="50" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="This script can now access window" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fontColor=#333333;size=30;position=0.5;position2=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;" parent="53" vertex="1">
+                    <mxGeometry y="170" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="Make sure this script is listed under &lt;b&gt;web_accessible_resources&lt;/b&gt; in manifest.json" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fontColor=#333333;size=30;position=0.5;position2=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;" parent="53" vertex="1">
+                    <mxGeometry x="60" y="60" width="280" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="&lt;h2&gt;How to get access to window&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" parent="53" vertex="1">
+                    <mxGeometry x="105" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="140" y="50" width="460" height="469" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="54" vertex="1">
+                    <mxGeometry x="230" y="209" width="160" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="54" vertex="1">
+                    <mxGeometry y="209" width="160" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-90;" parent="54" vertex="1">
+                    <mxGeometry x="160" y="179" width="70" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;b&gt;DOM&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="54" vertex="1">
+                    <mxGeometry x="165" y="229" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="shape=card;whiteSpace=wrap;html=1;" parent="54" vertex="1">
+                    <mxGeometry x="290" y="89" width="60" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="shape=card;whiteSpace=wrap;html=1;" parent="54" vertex="1">
+                    <mxGeometry x="300" y="99" width="60" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Chrome extension files" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="54" vertex="1">
+                    <mxGeometry x="274" y="49" width="96" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Chrome extension execution environment" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="54" vertex="1">
+                    <mxGeometry x="240" y="219" width="130" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Page/Website execution environemnt" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="54" vertex="1">
+                    <mxGeometry x="10" y="219" width="140" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="Cannot access window" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;dashed=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#666666;position2=0;" parent="54" vertex="1">
+                    <mxGeometry x="340" y="194" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="&lt;h2&gt;Normal extension architecture&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" parent="54" vertex="1">
+                    <mxGeometry x="40" width="330" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

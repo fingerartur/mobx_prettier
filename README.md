@@ -38,4 +38,7 @@ Read about [publishing extensions](https://developer.chrome.com/docs/webstore/pu
 - [example #2 - immutable.js formatter](https://github.com/andrewdavey/immutable-devtools/blob/master/src/createFormatters.js)
 
 
- ***Author's note:** I am not making any improvements to this extension until Google releases documentation for Chrome Dev Tool Formatters.*
+## Author's notes:
+
+1. *I am not making any improvements to this extension until Google releases documentation for Chrome Dev Tool Formatters, now it's just a black box.*
+2. Chrome Dev Tool Formatters get install to window. However, chrome extensions do not have access to window, so this part is a bit tricky. Here's how to do it ![](./installation.svg)
