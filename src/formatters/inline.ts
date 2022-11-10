@@ -146,8 +146,8 @@ class Inliner {
   }
 
   /**
-* Converts value to a short descriptive string.
-*/
+  * Converts value to a short descriptive string.
+  */
   _stringifyValue = (value: unknown, options?: StringifyOptions): string => {
     if (value === null) {
       return TEXTS.NULL
